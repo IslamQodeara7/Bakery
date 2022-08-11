@@ -1,0 +1,433 @@
+/* fixed styling Part ------------------------------------------- */
+.container {
+    width     : 90%;
+    margin    : auto;
+    text-align: center;
+}
+
+html,body{
+    transition: all 2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+@font-face {
+    font-family: "harlow";
+    src        : url(../webfonts/HARLOWSI_1.woff);
+}
+
+body {
+    font-family: "harlow";
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+}
+
+/* fixed styling Part -------------------------------------------- */
+
+
+/* header styling part ------------------------------------------- */
+.blogList {
+    position   : absolute;
+    line-height: 10px;
+    list-style : none;
+    text-align : center;
+    opacity    : 0;
+    transition : all 1s;
+    display    : flex;
+    flex-wrap  : wrap;
+    flex-flow  : column;
+    /* left: 50%; needed in media query */
+    left: 0%;
+    top: 0;
+}
+
+
+.blog:hover .blogList {
+    opacity: 1;
+}
+
+.blog {
+    position  : relative;
+    text-align: center;
+}
+
+.blogList li {
+    border          : 2px solid white;
+    width           : 100%;
+    padding         : 10px;
+    background-color: black;
+
+    /* right: 25px; */
+    /* display: block; */
+}
+
+.Start {
+    background-image   : url(../IMAGES/drew-coffman-1872.jpg);
+    position           : relative;
+    background-size    : cover;
+    height: 100%;
+    background-position: center center;
+    color              : white;
+    display            : flex;
+    flex-wrap          : wrap;
+    justify-content    : center;
+    align-items        : center;
+}
+
+.front {
+    padding   : 50px;
+    text-align: center;
+}
+
+
+.hword:hover{
+    color       : red !important;
+    border-top: 2px solid red;
+
+}
+
+.Nav {
+    padding         : 20px 0;
+    position        : fixed;
+    width           : 100%;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    justify-content : space-between;
+    align-items     : flex-start;
+    background-color: white;
+}
+.Nav i{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: black;
+    display: none;
+
+}
+
+.Nav i:hover{
+    color: red;
+}
+
+.Nav .container {
+    display         : flex;
+    justify-content : space-between;
+}
+
+.Nav ul {
+    /* color       : white; */
+    /* line-height: 40px; needed in media query */
+    margin-top  : 20px;
+    /* display     : block;  needed in media query*/
+    display: flex;
+    /* height: 0; needed for media query */
+    /* overflow: hidden; */
+    
+    list-style  : none;
+    width       : 50%;
+    flex-wrap   : wrap;
+
+}
+
+.hword {
+    margin          : 10px;
+    text-decoration : none;
+    color           : black;
+    padding         : 10px 5px;
+    transition      : color .5s;
+}
+
+.front .hword{
+    margin          : 10px;
+    text-decoration : none;
+    color           : white;
+    padding         : 10px 5px;
+    transition      : color .5s;
+}
+
+
+/* header styling part ------------------------------------------- */
+
+/* who are we div part ------------------------------------------- */
+.product1,
+.product2 {
+    padding        : 50px 0;
+    display        : flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items    : center;
+
+}
+
+.product1Img {
+    width: 40%;
+}
+
+.product1Img img {
+    width        : 100%;
+    border-radius: 50%;
+}
+
+.product1Description {
+    width: 40%;
+}
+
+.product1 ul li {
+    line-height: 40px;
+    list-style : none;
+    text-align : left;
+}
+
+/* who are we div part ------------------------------------------- */
+
+
+/* our location div part ------------------------------------------- */
+.product2 {
+    background-color: #f8f8f8;
+}
+
+/* our location div part ------------------------------------------- */
+
+/* our baking div part ------------------------------------------- */
+
+.product3child div img {
+    width        : 90%;
+    border-radius: 50%;
+}
+.product3child div{
+    width: 30%;
+}
+
+/* our baking div part */
+.product4Img {
+    width: 50%;
+}
+
+.product4Description {
+    width: 50%;
+}
+
+.product4Description ul {
+    list-style : none;
+    line-height: 20px;
+    text-align : left;
+}
+
+.product1Description i,
+.product4Description i {
+    padding         : 10px;
+    border-radius   : 50%;
+    border: 1px solid #8e7754;
+    margin-right    : 10px;
+    color: #8e7754;
+    background-color: white;
+}
+
+.product5 {
+    background-color: #403e38;
+}
+
+.product5 h4 {
+    color: white;
+}
+
+.product5 .first-half {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.first-half-child {
+    width: 25%;
+    color: white;
+}
+
+.first-half-child ul {
+    list-style: none;
+    text-align: left;
+}
+
+.first-half-child ul li {
+    line-height  : 30px;
+    border-bottom: 1px solid white;
+}
+
+.first-half-child i {
+    color       : white;
+    margin-right: 20px;
+}
+
+.second-half {
+    padding         : 50px;
+    background-color: #353330;
+    text-align      : center;
+    color           : gray;
+}
+
+.second-half i {
+    font-size       : 20px;
+    padding         : 10px;
+    background-color: white;
+    border-radius   : 50%;
+    margin          : 5px;
+    transition      : all 1s;
+}
+
+.second-half i:hover {
+    color           : white;
+    background-color: red;
+}
+
+.arrow{
+    position: fixed;
+    right: 30px;
+    top: 90%;
+    background-color: white;
+    color: black;
+    z-index: 55555;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all .5s;
+    border: 2px solid black;
+}
+
+.arrow a i{
+    color: black;
+}
+.arrow:hover{
+    background-color: black;
+}
+.arrow:hover a i{
+color: white;
+}
+
+.color{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    margin: 10px 5px;
+    box-shadow: 1px 1px 1px 1px black;
+
+}
+
+.colorName{
+    background-color: white;
+    border: 2px solid black;
+    width: 100px;
+    margin-top: 10px;
+    text-align: center;
+    height: 20px;
+    color: white;
+    transition: all 1s;
+}
+
+.fa-solid{
+    transition: all 1s;
+}
+
+.colors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100px;
+    border: 2px double black;
+    margin-top: 10px;
+    background-color: white;
+    transition: all 1s;
+}
+
+.chColor{
+     position: fixed;
+     display: flex;
+     flex-flow: column;
+     justify-content: flex-start;
+     align-items: center;
+     top: 50%;
+     right: 0;
+     transform: translateY(-50%);
+}
+
+.chColor i{
+    background-color: white;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.chColor i:hover{
+    background-color: black;
+    color: white;
+
+}
+
+
+
+
+@media screen and (min-width:781px) and (max-width:1000px) {
+    .first-half-child{
+        width: 50%;
+    }
+
+    .product3child div{
+        width: 50%;
+    }
+
+    .start{
+        height: 200%;
+    }
+}
+@media screen and (max-width:780px) {
+ .Nav ul{
+    height: 0px;
+    line-height: 40px;
+    display: block;
+    margin-right:50px;
+    overflow:hidden;
+    transition: all 1s;
+ }
+
+ .Nav ul li a{
+    color: black;
+ }
+
+
+ .Nav{
+    position: relative;
+    background-color: white;
+
+ }
+
+ .Start{
+    height: 300%;
+    align-items: flex-start;
+ }
+
+ .blogList{
+    left: 55%;
+ }
+ 
+ .Nav i{
+    display: block;
+ }
+
+ .product1Img,.product1Description,.product3child div,.product4Description
+ ,.product4Img,.first-half-child{
+    width: 100%;
+ }
+
+ 
+}
+
