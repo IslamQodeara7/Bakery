@@ -386,7 +386,7 @@ color: white;
     }
 
     .start{
-        height: 200%;
+        height: 100vh !important;
     }
 }
 @media screen and (max-width:780px) {
@@ -411,7 +411,7 @@ color: white;
  }
 
  .Start{
-    height: 300%;
+    height: 100vh;
     align-items: flex-start;
  }
 
